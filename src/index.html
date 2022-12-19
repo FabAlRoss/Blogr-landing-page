@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <header class="h-[524px] overflow-clip rounded-bl-[100px] bg-gradient-to-r from-veryLightRed to-lightRed md:h-[600px]">
+    <div class="hidden h-full bg-auto bg-[left_-28rem_top_-85rem] bg-no-repeat md:block" style="background-image: url('../dist/images/bg-pattern-intro-desktop.svg');">
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="relativ container mx-auto p-8 pt-10">
+          <div class="flex items-center justify-between">
+            <div class="flex flex-row items-center space-x-10">
+              <img class="flex" src="/dist/images/logo.svg" alt="logo">
+              <div class="flex space-x-6 text-white text-sm font-semibold">
+                <div class="relative flex flex-col">
+                  <button id="productBtn">
+                    Product <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  <div id="productMenu" class="hidden absolute top-8 flex-col"> 
+                    <a class="opacity-0" href="">Overview</a>
+                    <a class="opacity-0" href="">Pricing</a>
+                    <a class="opacity-0" href="">Marketplace</a>
+                    <a class="opacity-0" href="">Features</a>
+                    <a class="opacity-0" href="">Integrations</a>
+                  </div>
+                </div>
+                <div class="relative flex flex-col">
+                  <button id="companyBtn">
+                    Company <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  <div id="companyMenu" class="hidden absolute top-8 flex-col">
+                    <a class="opacity-0" href="">About</a>
+                    <a class="opacity-0" href="">Team</a>
+                    <a class="opacity-0" href="">Blog</a>
+                    <a class="opacity-0" href="">Careers</a>
+                  </div>
+                </div>
+                <div class="relative flex flex-col">
+                  <button id="connectBtn">
+                    Connect <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  <div id="connectMenu" class="hidden absolute top-8 flex-col">
+                    <a class="opacity-0" href="">Contact</a>
+                    <a class="opacity-0" href="">Newsletter</a>
+                    <a class="opacity-0" href="">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-6 mr-6">
+              <button class="text-white text-sm font-semibold">Login</button>
+              <button class="bg-white text-lightRed text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Sign Up</button>
+            </div>
+          </div>
+        </nav>
+        <!-- DESKTOP HERO -->
+        <div class="container mx-auto flex flex-col items-center justify-between py-24">
+          <h1 class="text-white text-center text-6xl font-semibold">A modern publishing platform</h1>
+          <p class="text-white text-xl font-light font-overpass mt-8">Grow your audience and build your online brand</p>
+          <div class="flex flex-row space-x-4 mt-12">
+            <button class="bg-white text-lightRed text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Start for Free</button>
+            <button class="border-solid border-2 border-white bg-transparent text-white text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Learn More</button>
+          </div>
+        </div>
+    </div>
+    <div class="h-full bg-auto bg-[left_-20rem_top_-18rem] bg-no-repeat md:hidden" style="background-image: url('../dist/images/bg-pattern-intro-mobile.svg');">
+        <!-- MOBILE NAVIGATION -->
+        <nav class="relativ container mx-auto pt-10 p-6">
+          <div class="flex items-center justify-between">
+            <img class="w-16 h-auto" src="/dist/images/logo.svg" alt="logo">
+            <button id="hamburger" class="flex flex-col w-8 h-8 justify-center space-y-2">
+              <span id="hamburgerOne" class="w-8 hamburger menu-first"></span>
+              <span id="hamburgerTwo" class="w-8 hamburger menu-second"></span>
+              <span id="hamburgerThree" class="w-8 hamburger menu-third"></span>
+            </button>
+          </div>
+          <div id="hamburgerMenu" class="hidden absolute flex flex-col w-10/12 mx-8 space-y-10 py-10 px-10 top-28 left-0 justify-center rounded-tr-2xl rounded-bl-2xl bg-white text-darkGrayishBlue">
+            <div class="flex flex-col basis-1/2 items-center justify-center space-y-4">
+              <button id="productBtnMobile" class="shadow-black">Product <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="hsl(353, 100%, 62%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
+              <div id="productMenuMobile" class="hidden basis-1/2 flex-col items-center justify-start text-sm opacity-0">
+                <a class="opacity-0" href="">Overview</a>
+                <a class="opacity-0" href="">Pricing</a>
+                <a class="opacity-0" href="">Marketplace</a>
+                <a class="opacity-0" href="">Features</a>
+                <a class="opacity-0" href="">Integrations</a>
+              </div>
+              <button id="companyBtnMobile" class="shadow-black">Company <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="hsl(353, 100%, 62%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
+              <div id="companyMenuMobile" class="hidden basis-1/2 flex-col items-center justify-center text-sm">
+                <a class="opacity-0" href="">About</a>
+                <a class="opacity-0" href="">Team</a>
+                <a class="opacity-0" href="">Blog</a>
+                <a class="opacity-0" href="">Careers</a>
+              </div>
+              <button id="connectBtnMobile" class="shadow-black">Connect <svg class="w-3 h-3 inline" aria-hidden="true" fill="none" stroke="hsl(353, 100%, 62%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
+              <div id="connectMenuMobile" class="hidden basis-1/2 flex-col items-center justify-end text-sm">
+                <a class="opacity-0" href="">Contact</a>
+                <a class="opacity-0" href="">Newsletter</a>
+                <a class="opacity-0" href="">LinkedIn</a>
+              </div>
+            </div>
+            <hr class="w-full border-grayishBlue">
+            <div class="flex flex-col items-center justify-center space-y-4">
+              <button class="">Login</button>
+              <button class="bg-gradient-to-r from-veryLightRed to-lightRed text-white text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Sign Up</button>
+            </div>
+          </div>
+        </nav>
+        <!-- MOBILE HERO -->
+        <div class="container mx-auto flex flex-col items-center justify-between py-14 px-6">
+          <h1 class="text-white text-3xl text-center font-semibold">A modern publishing platform</h1>
+          <p class="text-white text-base text-center font-light font-overpass mt-6">Grow your audience and build your online brand</p>
+          <div class="flex flex-row space-x-4 mt-12">
+            <button class="bg-white text-lightRed text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Start for Free</button>
+            <button class="border-solid border-2 border-white bg-transparent text-white text-sm font-bold py-3 w-32 rounded-full hover:opacity-80">Learn More</button>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  
+  <!-- DESIGN SECTION -->
+  <section class="mx-auto my-16 lg:my-6">
+    <h1 class="text-veryDarkBlue text-2xl sm:text-3xl text-center font-semibold lg:mt-32 lg:text-4xl">Designed for the future</h1>
+    <div class="flex flex-col overflow-clip lg:flex-row lg:items-center lg:mt-24">
+      <img class="mt-10 min-[600px]:scale-[0.7] lg:hidden" src="/dist/images/illustration-editor-mobile.svg" alt="editor">
+      <div class="flex flex-col justify-center lg:w-1/2 lg:ml-20">
+        <div class="p-8 flex flex-col justify-center md:min-w-[500px]">
+          <p class="leading-none tracking-wider text-veryDarkBlue text-2xl text-center font-semibold lg:text-left">Introducing an extensible editor</p>
+          <p class="mt-6 leading-relaxed tracking-wider text-darkGrayishBlue text-sm text-center font-overpass font-light lg:leading-loose lg:font-normal lg:text-left lg:mt-8 lg:max-w-[480px]">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
+        </div>
+        <div class="p-8 flex flex-col justify-center lg:max-h-[150px] lg:mt-8 md:min-w-[500px]">
+          <p class="leading-none tracking-wider text-veryDarkBlue text-2xl text-center font-semibold lg:text-left">Robust content management</p>
+          <p class="mt-6 leading-relaxed tracking-wider text-darkGrayishBlue text-sm text-center font-overpass font-light lg:leading-loose lg:font-normal lg:text-left lg:mt-8 lg:max-w-[480px]">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+      </div>
+      <div class="flex">
+        <img class="hidden md:transform-none xl:translate-x-64 lg:block" src="/dist/images/illustration-editor-desktop.svg" alt="editor">
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRATSTRUCTURE SECTION -->
+  <section class="relativ flex justify-center items-center h-[545px] mt-60 min-[800px]:mt-0 md:mt-60">
+    <div class="absolute -z-10 w-full h-[545px] overflow-clip rounded-bl-[100px] rounded-tr-[100px] bg-gradient-to-b md:bg-gradient-to-r from-darkGrayBlue to-darkDesaturatedBlue md:h-[405px]">
+      <img class="absolute scale-[1.6] top-[-125px] md:top-[-500px] md:left-[-210px] md:transform-none" src="/dist/images/bg-pattern-circles.svg" alt="circles">
+    </div>
+    <div class="absolute flex flex-col items-center w-full -translate-y-32 md:flex-row md:items-center lg:justify-between md:translate-y-12">
+      <div class="flex sm:min-w-[400px] min-[1000px]:ml-20">
+        <img class="md:-mt-16" src="/dist/images/illustration-phones.svg" alt="phones">
+      </div>
+      <div class="p-6 flex flex-col md:min-w-[300px] md:-mt-24 md:ml-16 lg:mr-36 md:py-8 md:px-0">
+        <p class="leading-snug tracking-wider text-white text-3xl md:text-2xl text-center font-semibold md:text-left lg:text-3xl">State of the Art Infrastructure</p>
+        <p class="mt-6 leading-relaxed tracking-wider text-white text-sm text-center font-overpass font-light md:leading-loose md:font-normal md:text-left md:mt-8 md:max-w-[490px]">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLING SECTION -->
+  <section class="flex flex-col mt-12 mb-12 items-center overflow-clip lg:flex-row lg:justify-between md:mt-2 md:mb-32">
+    <img class="md:hidden" src="/dist/images/illustration-laptop-mobile.svg" alt="editor">
+    <div class="flex -ml-64 min-w-[900px]">
+      <img class="hidden object-none md:block" src="/dist/images/illustration-laptop-desktop.svg" alt="editor">
+    </div>
+    <div class="flex flex-col items-center justify-center mr-0 md:mr-36 lg:justify-start">
+      <div class="p-8 flex flex-col justify-center md:min-w-[400px]">
+        <p class="leading-none tracking-wider text-veryDarkBlue text-2xl text-center font-semibold md:text-left">Free, open, simple</p>
+        <p class="mt-6 leading-relaxed tracking-wider text-darkGrayishBlue text-sm text-center font-overpass font-light md:leading-loose md:font-normal md:text-left md:mt-8 md:max-w-[460px]">
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        </p>
+      </div>
+      <div class="p-8 flex flex-col justify-center md:max-h-[150px] md:min-w-[400px] md:mt-8">
+        <p class="leading-none tracking-wider text-veryDarkBlue text-2xl text-center font-semibold md:text-left">Powerful tooling</p>
+        <p class="mt-6 leading-relaxed tracking-wider text-darkGrayishBlue text-sm text-center font-overpass font-light md:leading-loose md:font-normal md:text-left md:mt-8 md:max-w-[460px]">
+          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-darkBlackBlue rounded-tr-[100px] py-14 md:pl-28 md:pr-40 lg:pl-32 lg:pr-80">
+    <div class="flex flex-col w-full items-center space-y-8 md:flex-row md:space-y-0 md:space-x-20 lg:space-x-52 md:items-start">
+      <div class="flex mb-8 min-w-[100px]">
+        <img class="block" src="/dist/images/logo.svg" alt="logo">
+      </div>
+      <div class="flex flex-col max-[600px]:space-y-8 min-[600px]:space-x-12 min-[600px]:flex-row">
+        <div class="flex flex-col items-center text-white space-y-4 md:space-y-8 md:items-start">
+          <h3>Product</h3>
+
+          <div class="flex flex-col items-center text-darkGrayishBlue space-y-1 md:space-y-2 md:items-start">
+            <a href="">Overview</a>
+            <a href="">Pricing</a>
+            <a href="">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center text-white space-y-4 md:space-y-8 md:items-start">
+          <h3>Company</h3>
+
+          <div class="flex flex-col items-center text-darkGrayishBlue space-y-1 md:space-y-2 md:items-start">
+            <a href="">About</a>
+            <a href="">Team</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center text-white space-y-4 md:space-y-8 md:items-start">
+          <h3>Connect</h3>
+      
+          <div class="flex flex-col items-center text-darkGrayishBlue space-y-1 md:space-y-2 md:items-start">
+            <a href="">Contact</a>
+            <a href="">Newsletter</a>
+            <a href="">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
